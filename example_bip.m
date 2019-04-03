@@ -18,7 +18,7 @@ else
     end
 end
 
-
-[A, success] = greedy_bip_configuration(degrees1 , degrees2, 100);
+trials = 100;
+[A, success] = greedy_bip_configuration(degrees1 , degrees2, trials);
 
 success
