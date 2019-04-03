@@ -1,4 +1,5 @@
 function [A, margin] = naive_bip_configuration(degrees1, degrees2)
+%for the margin to be potentially zero, degrees1 and degrees2 should satisfy the condition that sum(degrees1)==sum(degrees2)
 
 nnodes1 = length(degrees1);
 nnodes2 = length(degrees2);
