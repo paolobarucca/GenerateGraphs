@@ -1,3 +1,5 @@
+%this code is for generating a bipartite network from the microcanonical configuration model 
+
 c1 = 10;
 c2 = 5;
 
@@ -7,6 +9,7 @@ n2 = 200;
 degrees1 = poissrnd(c1,[n1 1]); 
 degrees2 = poissrnd(c2,[n2 1]); 
 
+%these lines make the constraints compatible, i.e. sum(degrees1) == sum(degrees2)
 delta = sum(degrees1) - sum(degrees2);
 if  delta> 0 
     for k=1:delta 
